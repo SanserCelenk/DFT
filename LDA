@@ -10,10 +10,10 @@ from ase.parallel import paropen
 from gpaw import GPAW
 
 
-xc='LDA' #xc-functional. Change to 'PBE' or 'BEEF-vdw' to run with other functionals
+xc='LDA' 
 
 d = 1.56  # C-C distance. 
-a = d * np.sqrt(3)  # Translate C-C distance to lattice parameter
+a = d * np.sqrt(3)  # C-C distance to lattice parameter
 
 traj = Trajectory('{}/LiC6_h.traj'.format(xc), 'w')
 
